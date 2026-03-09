@@ -74,3 +74,36 @@ Parallel Hyperparameter Search
 Performance Benchmarking
 Speedup | Efficiency | Overhead
 ```
+
+## Parallel Computing Frameworks
+### Dask
+
+Used for distributed data processing and model training.
+
+Applications in the project:
+- Parallel CSV loading
+- Distributed XGBoost training
+- Distributed Random Forest via Joblib backend
+
+Dask uses a scheduler-worker architecture where tasks are distributed across multiple workers.
+
+### Joblib
+
+Used for parallel execution of independent tasks.
+
+Applications include:
+- Rolling feature computation
+- Hyperparameter search
+- cross-validation
+
+Joblib creates process pools or thread pools to distribute workloads across cores.
+
+### Built-in Library Parallelism
+
+Tree-based models contain internal multi-threading.
+
+Examples:
+- XGBClassifier(n_jobs=k)
+- RandomForestClassifier(n_jobs=k)
+
+These implementations parallelize tree construction and feature split evaluation.
