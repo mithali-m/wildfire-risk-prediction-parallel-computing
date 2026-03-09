@@ -76,28 +76,7 @@ Speedup | Efficiency | Overhead
 ```
 ## HPC Pipeline Architecture
 
-flowchart LR
-
-A[Wildfire Dataset<br>9.5M records] --> B[Parallel Data Loading<br>Dask]
-
-B --> C[Data Cleaning<br>Remove invalid values]
-C --> D[Feature Engineering]
-
-D --> E[Rolling Statistics<br>60-day window]
-D --> F[Lag Features<br>7-day & 30-day]
-
-E --> G[Parallel Feature Generation<br>Joblib]
-F --> G
-
-G --> H[Train Validation Test Split]
-
-H --> I[XGBoost Model]
-H --> J[Random Forest Model]
-
-I --> K[Parallel Training<br>Dask / Threads]
-J --> K
-
-K --> L[Performance Benchmarking<br>Speedup Efficiency Overhead]
+![HPC Pipeline Architecture](images/HPC_Pipeline_Architecture.png)
 
 ## Parallel Computing Frameworks
 ### Dask
