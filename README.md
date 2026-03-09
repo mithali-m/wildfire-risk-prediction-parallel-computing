@@ -78,6 +78,14 @@ Speedup | Efficiency | Overhead
 
 ![HPC Pipeline Architecture](images/HPC_Pipeline_Architecture.png)
 
+## Parallelization Strategy Comparison
+
+![Parallelization Strategy Comparison](images/Parallelization_strategy_comparison.png)
+
+## Wildfire Prediction ML Workflow
+
+![Wildfire Prediction ML Workflow](images/Wildfire_prediction_ML_workflow.png)
+
 ## Parallel Computing Frameworks
 ### Dask
 
