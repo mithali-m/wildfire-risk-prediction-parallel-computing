@@ -78,14 +78,6 @@ Speedup | Efficiency | Overhead
 
 ![HPC Pipeline Architecture](images/HPC_Pipeline_Architecture.png)
 
-## Parallelization Strategy Comparison
-
-![Parallelization Strategy Comparison](images/Parallelization_strategy_comparison.png)
-
-## Wildfire Prediction ML Workflow
-
-![Wildfire Prediction ML Workflow](images/Wildfire_prediction_ML_workflow.png)
-
 ## Parallel Computing Frameworks
 ### Dask
 
@@ -187,6 +179,10 @@ Training dataset adjusted to: 15% fire events
 
 to improve model training.
 
+## Wildfire Prediction ML Workflow
+
+![Wildfire Prediction ML Workflow](images/Wildfire_prediction_ML_workflow.png)
+
 ## Train / Validation / Test Split
 
 Chronological splitting was used to avoid data leakage.
@@ -227,6 +223,10 @@ Large training tasks resulted in excellent parallel efficiency.
 | Random Forest | 0.664    | 0.554   | ~210 seconds  |
 
 XGBoost achieved faster training while Random Forest showed better scaling across cores.
+
+## Parallelization Strategy Comparison
+
+![Parallelization Strategy Comparison](images/Parallelization_strategy_comparison.png)
 
 ## HPC Insights
 
